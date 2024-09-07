@@ -1,32 +1,19 @@
 window.onload=function(){
 		let hours = new Date().getHours();//拿到当前小时
 		if(String(hours) === '22' || String(hours) === '0'){
-			alert(hours)
+				if (isMobile()) {
+				alert("mobile");
+			} else {
+				alert("pc");
+			}
 			//return true
 		
 		}else{
 			alert("否")
 			//return false
 		}
-
-
-        !(function () {
-
-            const userAgent = navigator.userAgent
-
-            // 验证是否为Android或iPhone
-
-            const android = userAgent.match(/(Android);?[\s\/]+([\d.]+)?/)
-
-            const iphone = userAgent.match(/(iPhone\sOS)\s([\d_]+)/)
-
-            // 如果是Android或iPhone，则跳转至移动站点
-
-            if (android || iphone) {
-
-                location.href = 'http://baidu.com'
-
-            }
-
-        })()
 }
+		function isMobile() {
+					let flag = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+					return flag;
+				}

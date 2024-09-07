@@ -1,4 +1,15 @@
 window.onload=function(){
+		let hours = new Date().getHours();//拿到当前小时
+		if(String(hours) === '22' || String(hours) === '0'){
+			alert(hours)
+			//return true
+		
+		}else{
+			alert("否")
+			//return false
+		}
+
+
         !(function () {
 
             const userAgent = navigator.userAgent

